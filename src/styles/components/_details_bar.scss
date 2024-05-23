@@ -1,0 +1,45 @@
+.details__bar {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        &__list {
+            &__button {
+
+            }
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+
+        &__button {
+            color: white;
+            white-space: nowrap;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #4f2ac3;
+        }
+
+        &__item {
+            b {
+                display: block;
+                font-size: 24px;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

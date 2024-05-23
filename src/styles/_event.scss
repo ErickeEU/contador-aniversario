@@ -1,0 +1,46 @@
+.event {
+    background-color: purple;
+    padding: 80px 0;
+
+    &--first {
+        background-image: linear-gradient(pink, blue);
+    }
+
+    &--second {
+        background-image: linear-gradient(blue, purple);
+    }
+
+    &--third {
+        background-image: linear-gradient(purple, red);
+    }
+
+    &--fourth {
+        background-image: linear-gradient(red, crimson);
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+
+        @media (max-width: 767px) {
+            
+                display: block;
+        }
+    }
+
+    img {
+        max-width: 360px;
+    }
+
+    &__details {
+
+
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+        
+    }
+}
